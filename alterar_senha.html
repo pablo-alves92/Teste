@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Alterar Senha</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/pmv-ads-2022-2-e1-proj-web-t3-grupo-2-1/CSS/alterar_senha.css">
+</head>
+
+<body>
+
+    <conteiner class="conteiner">
+        <!--Logo-->
+        <header class="cabecalho">
+            <img src="_img/logo.png">
+        </header>
+
+        <!--Título do conteúdo-->
+        <div class="titulo">
+            <h1>Alterar senha</h1>
+        </div>
+
+        <!--Conteúdo-->
+        <section class="conteudo">
+            <!--Formulário de alteração de senha-->
+            <form onsubmit="senhaOK();">
+                <input type="password" name="atual" required placeholder="Senha atual" minlength="6"><br><br><br><br>
+                <input type="password" name="senha" required placeholder="Nova Senha" minlength="6"
+                    onchange="confereSenha();"><br><br><br><br>
+                <input type="password" name="confirma" required placeholder="Confirme a senha"
+                    onchange="confereSenha();" minlength="6"><br><br>
+                <h3>A senha deve conter no mínimo 6 caracteres!</h3><br>
+                
+                <!--Botões-->
+                <input type="submit" value='SALVAR' class="input_btn"><br><br><br>
+                <input type="button" value='CANCELAR' class="input_btn" />
+            </form>
+        </section>
+    </conteiner>
+
+    <script src="/pmv-ads-2022-2-e1-proj-web-t3-grupo-2-1/JS/alterar_senha.js"></script>
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+</body>
+
+</html>

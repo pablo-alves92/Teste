@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clientes</title>
+  <link rel="stylesheet" href="/pmv-ads-2022-2-e1-proj-web-t3-grupo-2-1/CSS/clientes.css">
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+  <conteiner class="conteiner_principal">
+    <!--Logo-->
+    <header class="logo">
+      <img id="img" src="img/logo.png">
+    </header>
+
+    <!--Menu-->
+    <aside class="menu">
+      <ul class="menu">
+        <li><a href="#">Home</a>
+        <li><a href="#">Clientes</a>
+        </li>
+        <li><a href="#">Financeiro</a>
+      </ul>
+    </aside>
+    </div>
+
+    <!--Conteúdo-->
+    <section class="conteudo">
+      <div id="tilt" class="container">
+        <div class="header">
+          <!--Titulo do conteúdo-->
+          <span>Clientes</span>
+
+          <!--Botão para cadastro de novo cliente-->
+          <button onclick="openModal(), limpar()" id="new" data-target="modal">Novo Cliente</button>
+        </div>
+
+        <!--Tabela do conteúdo-->
+        <div class="divTable">
+          <table>
+            <thead>
+              <tr>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Telefone</th>
+                <th class="acao">Editar</th>
+                <th class="acao">Excluir</th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+        </div>
+        
+        <div class="modal-container">
+          <div class="modal">
+            <!--Formulário de cadastro de cliente-->
+            <form>
+              <label for="m-nome">Nome</label>
+              <input id="m-nome" type="text" required />
+
+              <label for="m-cpf">CPF</label>
+              <input id="m-cpf" type="text" minlength="11" maxlength="11" size="11"
+                onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="Apenas números"
+                required />
+
+              <label for="m-email">E-mail</label>
+              <input id="m-email" type="text" required />
+
+              <label for="m-telefone">Telefone</label>
+              <input id="m-telefone" type="tel" maxlength="11" size="11"
+                onkeypress="return event.charCode >= 48 && event.charCode <= 57" required />
+
+              <label for="m-dataNascimento">Data de Nascimento</label>
+              <input id="m-dataNascimento" type="date"  required />
+
+              <label>Sexo: </label><select id="sexo">
+                <option></option>
+                <option value="Masculino">Masculino</option>
+                <option value="Feminino">Feminino</option>
+              </select><br><br>
+
+              <label for="m-cep">Cep</label>
+              <input type="text" id="cep" maxlength="9" placeholder="Apenas números" autofocus required />
+
+              <label for="m-endereco">Endereço</label>
+              <input id="m-endereco" type="text" disabled required />
+
+              <label for="m-numero">Número</label>
+              <input type="text" id="m-numero" maxlength="8" size="8"
+                onkeypress="return event.charCode >= 48 && event.charCode <= 57" required />
+
+              <label for="m-complemento">Complemento</label>
+              <input id="m-complemento" type="text"  />
+
+              <label for="m-bairro">Bairro</label>
+              <input id="m-bairro" type="text" disabled required />
+
+              <label for="m-cidade">Cidade</label>
+              <input id="m-cidade" type="text" disabled required />
+
+              <label for="m-estado">Estado</label>
+              <input id="m-estado" type="text" disabled required />
+
+              <!--Botão para salvar cadastro-->
+              <button id="btnSalvar">SALVAR</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </conteiner>
+
+  <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+  <script src="/pmv-ads-2022-2-e1-proj-web-t3-grupo-2-1/JS/clientes.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

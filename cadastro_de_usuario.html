@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de usuário</title>
+    <link rel="stylesheet" href="/pmv-ads-2022-2-e1-proj-web-t3-grupo-2-1/CSS/cadastro_de_usuario.css">
+</head>
+
+<body>
+    <conteiner class="conteiner">
+        <!--Logo-->
+        <header class="logo">
+            <img src="_img/logo.png">
+        </header>
+
+        <!--Título do conteúdo-->
+        <div class="titulo">
+            <h1>Cadastro de usuário</h1>
+        </div>
+
+        <section class="conteudo">
+            <!--Formulário de cadastro de usuário-->
+            <form onsubmit="senhaOK ()">
+                <input type="text" class="nome" required placeholder="Nome"><br><br>
+                <input type="text" class="cnpj" required minlength="11" maxlength="14" size="14"
+                    onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+                    placeholder="CPF/CNPJ (Apenas números)"><br><br>
+                <input type="email" class="email" required placeholder="E-mail"><br><br>
+                <input type="password" class="senha" required placeholder="Nova Senha" minlength="6"
+                    onchange="confereSenha();"><br><br>
+                <input type="password" class="confirma" required placeholder="Confirme a senha"
+                    onchange="confereSenha();" minlength="6"><br><br>
+                <h3>A senha deve conter no mínimo 6 caracteres!</h3><br>
+
+                <!--Botões-->
+                <input type="submit" class="input_btn" value="SALVAR" onclick=""><br><br>
+                <input type="button" class="input_btn" value="CANCELAR" onclick="">
+            </form>
+        </section>
+    </conteiner>
+
+    <script src="/pmv-ads-2022-2-e1-proj-web-t3-grupo-2-1/JS/cadastro_de_usuario.js"></script>
+</body>
+
+</html>

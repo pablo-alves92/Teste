@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Alterar Senha</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/pmv-ads-2022-2-e1-proj-web-t3-grupo-2-1/CSS/redefinir_senha.css" />
+</head>
+
+<body>
+    <!--Logo-->
+    <conteiner class="conteiner">
+        <header class="cabecalho">
+            <img src="_img/logo.png">
+        </header>
+
+        <!--Título do conteúdo-->
+        <div class="titulo">
+            <h1>Redefinir senha</h1>
+        </div>
+
+        <!--Conteúdo-->
+        <section class="conteudo">
+            <form onsubmit="senhaOK()">
+                <!--Campos de redefinição da senha.-->
+                <input type="password" name="senha" class="input_password" placeholder="Nova senha" required minlength="6"
+                    onchange="confereSenha()" /><br><br>
+                <input type="password" name="confirma" class="input_text" placeholder="Confirmar senha" required minlength="6"
+                    onchange="confereSenha()" /><br><br>
+
+                <!--Botão-->
+                <input type="submit" value="SALVAR" class="input_btn" onclick="salvar()" /><br><br>
+            </form>
+        </section>
+    </conteiner>
+
+    <script src="/pmv-ads-2022-2-e1-proj-web-t3-grupo-2-1/JS/redefinir_senha.js"></script>
+</body>
+
+</html>

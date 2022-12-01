@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Esqueceu a senha?</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/pmv-ads-2022-2-e1-proj-web-t3-grupo-2-1/CSS/esqueceu_senha.css" />
+</head>
+
+<body>
+    <!--Logo.-->
+    <conteiner class="conteiner">
+        <header class="cabecalho">
+            <img src="_img/logo.png">
+        </header>
+        <!--Título do conteúdo-->
+        <div class="titulo">
+            <h1>Esqueceu a senha?</h1>
+        </div>
+        <!--Conteúdo-->
+        <section class="conteudo">
+            <form onsubmit="validacaoOK()">
+                <!--Campos para envio do link de recuperação.-->
+                <input type="email" id="email" class="input_text" placeholder="E-mail" required /><br><br>
+                <input type="text" id="cnpj" class="input_text" minlength="14" maxlength="14" size="14"
+                    placeholder="CNPJ" required /><br><br>
+                <!--Botão-->
+                <input type="submit" value="ENVIAR" class="input_btn" /><br><br>
+            </form>
+        </section>
+    </conteiner>
+
+    <script src="/pmv-ads-2022-2-e1-proj-web-t3-grupo-2-1/JS/esqueceu_senha.js"></script>
+</body>
+
+</html>
